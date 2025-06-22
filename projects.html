@@ -1,158 +1,146 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MCL Portfolio</title>
-    </head>
-    <body>
-        <div>
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="achievements.html">Achievements</a>
-                <a href="work_exposure.html">Work Exposure</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-        
-        <div>
-            Projects
-        </div>
-        <!-- <div>
-            <a href="">Mapua MCL Bookshop Dashboard</a>
-            <br>
-            <a href="">Dashboard for Predicting CA19-9 Levels via Ensemble Learning Techniques</a>
-            <br>
-            <a href="">Lattice Semiconductor Technical Publication Dashboard</a>
-            <br>
-            <a href="">Dashboards for Tableau Projects</a>
-        </div> -->
-        <hr>
-        <div>
-            <div>
-                Mapua MCL Bookshop Dashboard
-            </div>
-            <div>
-                Mapua MCL Bookshop Dashboard is an interactive analytics dashboard to display key performance indicator (KPI) reports for the bookstore 
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The software assisted bookstore staff in tracking sales trends and inventory performance.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The dashboard provided data visualizations that enhanced user reporting and analytical insights.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                Predicting CA19-9 Levels via Ensemble Learning Techniques.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                This web application for visualizing and predicting CA19-9 levels.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                CA19-9 is a biomarker commonly used in cancer diagnosis, particularly for pancreatic cancer. The application utilizes ensemble learning techniques for predictions
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The front end is built using HTML, CSS, Bootstrap, and JavaScript, while the backend is developed with Django and Django REST Framework. Plotly is used for data visualization
-            </div>
-            <div>
-                Lagay Images
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                Lattice Semiconductor Technical Publication Dashboard
-            </div>
-            <div>
-                Lattice Semiconductor Technical Publication Dashboard is a dashboard tracker for the Software Technical Publication team
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The software helps the team by tracking the tasks for each user.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The user can add, update, and delete tasks that are assigned to them.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                The user can also view the tasks assigned to them and the status of each task.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>
-                Dashboards for Tableau Projects
-            </div>
-            <div>
-                TB Burden Country Dataset Dashboard
-            </div>
-            <div>
-                Developed an analytics dashboard to analyze TB-related deaths, TB-HIV co-infections, and incidence rates, identifying regions with the highest burden helping users recognize areas requiring urgent intervention and understand contributing factors.
-            </div>
-            <div>
-                Lagay images
-            </div>
-            <div>
-                Created a global heat map visualizing country population to examine potential correlations between population size, TB incidence, deaths, and prevalence.
-            </div>
-            <div>
-                Balaji Fast Food Dataset Analytical Dashboard
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                Developed an analytics dashboard to determine the optimal time for sales helping the fast-food business anticipate peak customer traffic.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                Conducted time series analysis of sales trends, providing insights into the highest sales periods and their underlying factors.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-            <div>
-                Identified the best-selling and least popular menu items, enabling data-driven decisions on promotions and inventory management.
-            </div>
-            <div>
-                Lagay Images
-            </div>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCL Portfolio</title>
 
-        <hr>
-        <div>
-            Sama ko pa ba SQL?
-        </div>
-    </body>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar {
+      background-color: #c0392b;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #c0392b;
+      display: inline-block;
+    }
+
+    .project-description {
+      font-size: 1.05rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-section {
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MCL Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="work_exposure.html">Work Exposure</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+
+    <!-- Project Section -->
+    <div class="project-section">
+      <h2 class="section-title">Mapúa MCL Bookshop Dashboard</h2>
+      <p class="project-description">
+        An interactive analytics dashboard displaying KPIs for the bookstore. It assists staff in tracking sales trends and inventory performance.
+      </p>
+      <div class="row project-images">
+        <div class="col-md-4"><img src="images/book1.png" alt="book1" /></div>
+        <div class="col-md-4"><img src="images/book2.png" alt="book2" /></div>
+        <div class="col-md-4"><img src="images/book3.png" alt="book3" /></div>
+        <div class="col-md-4"><img src="images/book4.png" alt="book4" /></div>
+        <div class="col-md-4"><img src="images/book5.png" alt="book5" /></div>
+        <div class="col-md-4"><img src="images/book6.png" alt="book6" /></div>
+        <div class="col-md-4"><img src="images/book7.png" alt="book7" /></div>
+        <div class="col-md-4"><img src="images/book8.png" alt="book8" /></div>
+        <div class="col-md-4"><img src="images/book9.png" alt="book9" /></div>
+        <div class="col-md-4"><img src="images/book10.png" alt="book10" /></div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="project-section">
+      <h2 class="section-title">Predicting CA19-9 Levels</h2>
+      <p class="project-description">
+        Web app using ensemble learning to predict CA19-9 biomarker levels related to pancreatic cancer. Built using Django, REST, Plotly, and Bootstrap.
+      </p>
+      <div class="row project-images">
+        <div class="col-md-4"><img src="images/ca19-1.png" alt="CA19-9 Image" /></div>
+        <div class="col-md-4"><img src="images/ca19-2.png" alt="CA19-9 Image" /></div>
+        <div class="col-md-4"><img src="images/ca19-3.png" alt="CA19-9 Image" /></div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="project-section">
+      <h2 class="section-title">Lattice Semiconductor Dashboard</h2>
+      <p class="project-description">
+        Tracks technical publication tasks for the software documentation team. Users can add, update, delete, and monitor tasks and their statuses.
+      </p>
+      <div class="row project-images">
+        <div class="col-md-4"><img src="images/lattice1.png" alt="Lattice Image" /></div>
+        <div class="col-md-4"><img src="images/lattice2.png" alt="Lattice Image" /></div>
+        <div class="col-md-4"><img src="images/lattice3.png" alt="Lattice Image" /></div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="project-section">
+      <h2 class="section-title">Tableau Dashboards</h2>
+      <p class="project-description">
+        Created dashboards analyzing TB burden and fast food sales, identifying trends, customer behavior, and optimal marketing decisions.
+      </p>
+      <div class="row project-images">
+        <div class="col-md-4"><img src="images/tb-dashboard.png" alt="TB Dashboard" /></div>
+        <div class="col-md-4"><img src="images/balaji1.png" alt="Fast Food Dashboard" /></div>
+        <div class="col-md-4"><img src="images/balaji2.png" alt="Fast Food Dashboard" /></div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="text-muted">More projects coming soon... (maybe SQL-based ones!)</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
