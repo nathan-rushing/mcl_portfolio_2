@@ -9,37 +9,72 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
 <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
     .fa-anchor,.fa-coffee, .fa-pie-chart, .fa-bar-chart, .fa-tools, .fa-cogs {font-size:200px}
+
+    .navbar {
+      background-color: #c0392b;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #c0392b;
+      display: inline-block;
+    }
+
+    .project-description {
+      font-size: 1.05rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .project-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-section {
+      padding: 20px 0;
+    }
 </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
-            <a href="achievements.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Achievements</a>
-            <a href="work_exposure.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Work Exposure</a>
-            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-        </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-            <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
-            <a href="achievements.html" class="w3-bar-item w3-button w3-padding-large">Achievements</a>
-            <a href="work_exposure.html" class="w3-bar-item w3-button w3-padding-large">Work Exposure</a>
-            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">MCL Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="work_exposure.html">Work Exposure</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
     <!-- Header -->
-    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
         <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
         <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
         <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
@@ -137,7 +172,7 @@
                 </h5>
 
                 <p class="w3-text-grey">
-                    On the framework side, I’ve used Django REST Framework to develop strong and secure APIs, I use 
+                    On the framework side, I've used Django REST Framework to develop strong and secure APIs, I use 
                     Bootstrap to design responsive layouts quickly. I also have the experience in Flask 
                     when I need lightweight and flexible web solutions. 
                 </p>
@@ -146,14 +181,15 @@
     </div>
 
 
-    <div class="w3-container w3-black w3-center w3-opacity w3-padding-24">
+    <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-24"> -->
         <!-- <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1> -->
         <!-- <div class="w3-xlarge w3-padding-32">
             <i class="fab fa-facebook-f"></i> Facebook
             <i class="fab fa-linkedin-in"></i> LinkedIn
         </div> -->
-        <p>© Jonathan Bunquin</p>
-    </div>
+        <!-- <p>© Jonathan Bunquin</p> -->
+    <!-- </div> -->
+     <p class="text-muted" style="text-align: center; padding-top: 30px;">© Jonathan Bunquin</p>
 
     <!-- Footer -->
     <!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
