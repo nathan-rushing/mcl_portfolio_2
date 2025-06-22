@@ -1,81 +1,202 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MCL Portfolio</title>
-    </head>
-    <body>
-        <div>
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="achievements.html">Achievements</a>
-                <a href="work_exposure.html">Work Exposure</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+<html lang="en">
+<head>
+<title>MCL Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee, .fa-pie-chart, .fa-bar-chart, .fa-tools, .fa-cogs {font-size:200px}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+            <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+            <a href="achievements.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Achievements</a>
+            <a href="work_exposure.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Work Exposure</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
         </div>
-        <div>
-            Jonathan Bunquin
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+            <a href="achievements.html" class="w3-bar-item w3-button w3-padding-large">Achievements</a>
+            <a href="work_exposure.html" class="w3-bar-item w3-button w3-padding-large">Work Exposure</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
         </div>
-        <div>
-            Welcome to my MCL Portfolio
-        </div>
-        <hr>
-        <div>
-            About Me
-        </div>
-        <div>
-            <div>
-                I am Jonathan Bunquin, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science.
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
+        <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
+        <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
+        Get Started
+        </button>
+    </header>
+
+    <!-- First Grid -->
+    <div id="about" class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>About Me</h1>
+                <h5 class="w3-padding-32">
+                    I am Jonathan Bunquin, a fourth-year student at Mapua Malayan Colleges Laguna, currently pursuing a Bachelor of Science in Computer Science.
+                </h5>
+                <p class="w3-text-grey">
+                    This portfolio showcases my work and projects in the field of Data Analytics and Software Development
+                </p>
+                <br>
+                <p class="w3-text-grey">
+                    Below are some of my skills and experiences that I have gained throughout my academic journey.
+                </p>
             </div>
-            <div>
-                This portfolio showcases my work and projects in the field of Data Analytics and Software Development.
+
+            <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
             </div>
         </div>
-        <hr>
-        <div>
-            <div>
-                Skills
+    </div>
+
+    <!-- Second Grid -->
+    <div id="analytics" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+
+            <i class="fa fa-bar-chart w3-padding-64 w3-text-red w3-margin-right"></i>
             </div>
-            <div>
-                
+
+            <div class="w3-twothird">
+                <h1>Data Analytics</h1>
+                <h5 class="w3-padding-32">
+                    Data analytics is my favorite field in computing because I enjoy turning numbers 
+                    into clear and useful stories. At its core, data analysis means 
+                    looking at data to find patterns, insights, and answers.
+                </h5>
+
+            <p class="w3-text-grey">
+                I love creating dashboards and charts that help people understand data easily. I use different tools like Plotly, Matplotlib, Seaborn, Excel, 
+                Tableau, Power BI, and Python to make my visualizations clear and helpful.
+            </p>
+
+            <p class="w3-text-grey">
+                I also know how to use SQL to get and manage data from databases, and I’m familiar with the ETL process (Extract, Transform, Load), which is used to prepare data for analysis. 
+                I understand how to clean data, transform it, and do exploratory data analysis (EDA) to see what the data tells us.
+            </p>
             </div>
-            <div>
-                <div>
-                    Data Analytics
-                </div>
-                <div>
-                    Data analytics is my favorite field in computing because I enjoy turning numbers into clear and useful stories. At its core, data analysis means looking at data to find patterns, insights, and answers.
-                </div>
-                <div>
-                    I love creating dashboards and charts that help people understand data easily. I use different tools like Plotly, Matplotlib, Seaborn, Excel, Tableau, Power BI, and Python to make my visualizations clear and helpful.
-                </div>
-                <div>
-                    I also know how to use SQL to get and manage data from databases, and I’m familiar with the ETL process (Extract, Transform, Load), which is used to prepare data for analysis. I understand how to clean data, transform it, and do exploratory data analysis (EDA) to see what the data tells us.
-                </div>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div id="development" class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Software Development</h1>
+                <h5 class="w3-padding-32">
+                    I've been developing software for about four years, starting from my first year in college. I focus more on web development, but I also have some experience with mobile apps. I know how to use HTML, CSS, and JavaScript to build websites, and I've worked with 
+                    frameworks like Bootstrap, Django, and Flask to make my projects better and faster to build.
+                </h5>
+
+                <p class="w3-text-grey">
+                    I've also worked with different databases like SQLite, MySQL, and PostgreSQL, so I know how to handle and manage data in my apps. In addition, I've used Weka 
+                    for tasks like data mining and machine learning, and I've done computer vision projects using Python.
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+            <i class="fas fa-tools w3-padding-64 w3-text-red"></i>
 
             </div>
-            <div>
-                <div>
-                    Software Development
-                </div>
-                <div>
-                    I've been developing software for about four years, starting from my first year in college. I focus more on web development, but I also have some experience with mobile apps. I know how to use HTML, CSS, and JavaScript to build websites, and I've worked with frameworks like Bootstrap, Django, and Flask to make my projects better and faster to build.
-                </div>
-                <div>
-                    I've also worked with different databases like SQLite, MySQL, and PostgreSQL, so I know how to handle and manage data in my apps. In addition, I've used Weka for tasks like data mining and machine learning, and I've done computer vision projects using Python.
-                </div>
-            </div>            
-            <div>
-                <div>
-                    Languages and Tools
-                </div>
-                <div>
-                    I’ve worked with several programming languages and tools that have helped me build various software projects. Python is my main language, which I use mostly for building web applications and more. I’ve also used C# before for developing applications, but Python is my main language. On the framework side, I’ve used Django REST Framework to develop strong and secure APIs, I use Bootstrap to design responsive layouts quickly. I also have the experience in Flask when I need lightweight and flexible web solutions. 
-                </div>
-                <div>
-                    When I started developing a web application, I used JavaScript to add interactive features to websites. And for the front end, I rely on HTML and CSS to create well-structured and nicely styled web pages. 
-                </div>
+        </div>
+    </div>
+
+    <!-- Fourth Grid -->
+    <div id="tools" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+            <i class="fas fa-cogs w3-padding-64 w3-text-red w3-margin-right"></i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Languages and Tools</h1>
+                <h5 class="w3-padding-32">
+                    I've worked with several programming languages and tools that have helped me build various software projects. Python is my main language, 
+                    which I use mostly for building web applications and more. I've also used C# before for developing applications, but Python is my main language. 
+                </h5>
+
+                <p class="w3-text-grey">
+                    On the framework side, I’ve used Django REST Framework to develop strong and secure APIs, I use 
+                    Bootstrap to design responsive layouts quickly. I also have the experience in Flask 
+                    when I need lightweight and flexible web solutions. 
+                </p>
             </div>
         </div>
-    </body>
+    </div>
+
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-24">
+        <!-- <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1> -->
+        <!-- <div class="w3-xlarge w3-padding-32">
+            <i class="fab fa-facebook-f"></i> Facebook
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </div> -->
+        <p>© Jonathan Bunquin</p>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+        <div class="w3-xlarge w3-padding-32"> -->
+            <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+
+            <!-- <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>© Jonathan Bunquin</p> -->
+    <!-- </footer> -->
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+    </script>
+    <script>
+    // Menu toggle for small screens
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // Scroll to "About Me" section when button is clicked
+    document.getElementById("getStartedBtn").addEventListener("click", function () {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    });
+    </script>
+</body>
 </html>
