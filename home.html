@@ -56,6 +56,14 @@
         background-position: center;
         color: white;
     }
+  .hero-section {
+    height: 100vh;
+    background-image: url('images/home_bg1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
 
 </style>
 </head>
@@ -82,16 +90,20 @@
   </nav>
 
     <!-- Header -->
-<header class="w3-container w3-light-grey" style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+<!-- <header class="w3-container w3-center hero-section">
   <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
   <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
   <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
     Get Started
   </button>
-</header>
-
-
-
+</header> -->
+    <header class="w3-container w3-light-grey hero-section" style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+    <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
+    <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
+    <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
+        Get Started
+    </button>
+    </header>
 
 
     <!-- First Grid -->
@@ -123,7 +135,8 @@
         <div class="w3-content">
             <div class="w3-third w3-center">
 
-            <i class="fa fa-bar-chart w3-padding-64 w3-text-red w3-margin-right"></i>
+            <i class="fa fa-bar-chart w3-padding-64 w3-margin-right" style="color: #c0392b;"></i>
+            <!-- <i class="fa fa-bar-chart w3-padding-64 w3-text-red w3-margin-right"></i> -->
             </div>
 
             <div class="w3-twothird">
@@ -140,7 +153,7 @@
             </p>
 
             <p class="w3-text-grey">
-                I also know how to use SQL to get and manage data from databases, and I’m familiar with the ETL process (Extract, Transform, Load), which is used to prepare data for analysis. 
+                I also know how to use SQL to get and manage data from databases, and I'm familiar with the ETL process (Extract, Transform, Load), which is used to prepare data for analysis. 
                 I understand how to clean data, transform it, and do exploratory data analysis (EDA) to see what the data tells us.
             </p>
             </div>
@@ -164,7 +177,9 @@
             </div>
 
             <div class="w3-third w3-center">
-            <i class="fas fa-tools w3-padding-64 w3-text-red"></i>
+            <!-- <i class="fas fa-tools w3-padding-64 w3-text-red"></i> -->
+            <i class="fas fa-tools w3-padding-64" style="color: #c0392b;"></i>
+
 
             </div>
         </div>
@@ -174,7 +189,8 @@
     <div id="tools" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
             <div class="w3-third w3-center">
-            <i class="fas fa-cogs w3-padding-64 w3-text-red w3-margin-right"></i>
+            <!-- <i class="fas fa-cogs w3-padding-64 w3-text-red w3-margin-right"></i> -->
+            <i class="fas fa-cogs w3-padding-64 w3-margin-right" style="color: #c0392b;"></i>
             </div>
 
             <div class="w3-twothird">
