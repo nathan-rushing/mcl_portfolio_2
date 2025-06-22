@@ -49,6 +49,14 @@
     .project-section {
       padding: 20px 0;
     }
+    .hero-section {
+        height: 100vh;
+        background-image: url('images/nat1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
 </style>
 </head>
 <body>
@@ -74,13 +82,17 @@
   </nav>
 
     <!-- Header -->
-    <header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
-        <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
-        <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
-        <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
-        Get Started
-        </button>
-    </header>
+<header class="w3-container w3-light-grey" style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+  <h1 class="w3-margin w3-jumbo">Jonathan Bunquin</h1>
+  <p class="w3-xlarge">Welcome to my MCL Portfolio</p>
+  <button id="getStartedBtn" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">
+    Get Started
+  </button>
+</header>
+
+
+
+
 
     <!-- First Grid -->
     <div id="about" class="w3-row-padding w3-padding-64 w3-container">
@@ -100,7 +112,8 @@
             </div>
 
             <div class="w3-third w3-center">
-            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+                <img src="images/nat2.jpg" class="w3-image w3-round" style="width:100%; max-width:300px; height:auto;" alt="Jonathan Bunquin">
+            <!-- <i class="fa fa-anchor w3-padding-64 w3-text-red"></i> -->
             </div>
         </div>
     </div>
@@ -231,7 +244,7 @@
 
     // Scroll to "About Me" section when button is clicked
     document.getElementById("getStartedBtn").addEventListener("click", function () {
-        document.getElementById("analytics").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
     });
     </script>
 </body>
